@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, "Noto Sans Gujarati", sans-serif;
+    background: #f4f7fb;
+    color: #222;
+    padding: 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+}
+
+
+/* HEADER */
+
+.main-header {
+    background: white;
+    border-radius: 18px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.10);
+    margin-bottom: 25px;
+}
+
+.student-photo {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #eee;
+}
+
+.main-header h1 {
+    font-size: 30px;
+    margin-bottom: 8px;
+}
+
+.main-header h2 {
+    font-size: 21px;
+    margin-bottom: 5px;
+}
+
+.main-header p {
+    color: #666;
+}
+
+
+/* SUBJECT */
+
+.subjects {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+
+.subject-card {
+    background: white;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+}
+
+.subject-card h2 {
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+.worksheet-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.worksheet-buttons a {
+    text-decoration: none;
+    background: #eeeeee;
+    color: #222;
+    padding: 12px;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.worksheet-buttons a:hover {
+    transform: translateY(-2px);
+}
+
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px;
+    color: #666;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 650px) {
+
+    body {
+        padding: 10px;
+    }
+
+    .main-header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .main-header h1 {
+        font-size: 24px;
+    }
+
+    .main-header h2 {
+        font-size: 18px;
+    }
+
+    .subjects {
+        grid-template-columns: 1fr;
+    }
+}
